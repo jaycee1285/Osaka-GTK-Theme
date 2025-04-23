@@ -104,7 +104,7 @@ Run the following command in the terminal for a general installation
 The `./install.sh` allows some specific options like:
 
 ```sh
-./install.sh --tweaks moon mac outline float -t green -l
+./install.sh --tweaks solarized mac outline float -t green -l
 ```
 
 > For more information, run: `./install.sh --help`
@@ -122,7 +122,7 @@ The `./install.sh` allows some specific options like:
 -u, --uninstall         Uninstall/Remove installed themes or links
 
 --tweaks                Specify versions for tweaks
-                        1. [Solarized]  Solarized Color Schemes version
+                        1. [solarized]  Solarized Color Schemes version
                         2. black        Blackness color version
                         3. float        Floating gnome-shell panel style
                         4. outline      Windows with 2px outline style
