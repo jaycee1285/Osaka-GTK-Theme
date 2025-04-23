@@ -1,0 +1,73 @@
+// Solarized Osaka Theme Color Palette
+
+// Red
+$red-dark: #db302d;
+$red-light: #b7211f;
+
+// Pink
+$pink-dark: #d23681;
+$pink-light: #af2668;
+
+// Purple
+$purple-dark: #6d71c4;
+$purple-light: #484eb6;
+
+// Blue
+$blue-dark: #268bd3;
+$blue-light: #1a6397;
+
+// Teal
+$teal-dark: #29a298;
+$teal-light: #1a6265;
+
+// Cyan
+$cyan-dark: #33d6ff;
+$cyan-light: #00637a;
+
+// Green
+$green-dark: #849900;
+$green-light: #586600;
+
+// Yellow
+$yellow-dark: #b28500;
+$yellow-light: #664c00;
+
+// Orange
+$orange-dark: #c94c16;
+$orange-light: #a13c10;
+
+// Grey
+$grey-050: #f9f7f1;
+$grey-100: #f3efe2;
+$grey-150: #fdf6e2;
+$grey-200: #ede7d3;
+$grey-250: #e7dfc5;
+$grey-300: #e1d7b7;
+$grey-350: #91a0a1;
+$grey-400: #889696;
+$grey-450: #7b8d8e;
+$grey-500: #718384;
+$grey-550: #677879;
+$grey-600: #5e6d6e;
+$grey-650: #004152;
+$grey-700: #00313d;
+$grey-750: #002c38;
+$grey-800: #002029;
+$grey-850: #001419;
+$grey-900: #001014;
+$grey-950: #001010;
+
+// White
+$white: #fdf5e2;
+
+// Black
+$black: #001419;
+
+// Theme
+$default-light: $blue-light;
+$default-dark: $blue-dark;
+
+// Button
+$button-close: if($topbar == 'light', #b7211f, #db302d);
+$button-max: if($topbar == 'light', #586600, #849900);
+$button-min: if($topbar == 'light', #664c00, #b28500);
