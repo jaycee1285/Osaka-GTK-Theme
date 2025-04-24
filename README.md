@@ -20,6 +20,10 @@
 
 ![Solarized Osaka](https://raw.githubusercontent.com/Fausto-Korpsvart/Osaka-GTK-Theme/main/extra/screenshots/Osaka_00.png)
 
+![Solarized Default](https://raw.githubusercontent.com/Fausto-Korpsvart/Osaka-GTK-Theme/main/extra/screenshots/Solarized_00.png)
+
+![Solarized Light](https://raw.githubusercontent.com/Fausto-Korpsvart/Osaka-GTK-Theme/main/extra/screenshots/Light_00.png)
+
 ## INSTALLING THEMES
 
 Before installing the themes, make sure to install the following necessary packages:
