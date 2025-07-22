@@ -2,7 +2,7 @@
 	background-color: $background;
 	color: on($background);
 	border-radius: 0;
-	margin: 0 6px 0 0;
+	/* margin: 0 6px 0 0; */
 
 	.dim-label {
 		color: on($indicator, disabled);
@@ -15,7 +15,13 @@
 	margin: 0 $space-size $space-size $space-size;
 }
 
-// Sidebar
+%content_style {
+	// background-color: if($variant == 'light', rgba($white, 0.6), $fill);
+	// border-radius: $corner-radius;
+	margin: $space-size;
+}
+
+// Sidebar & Scrollbar
 %sidebar_style {
 	background-color: if($variant == 'light', $grey-200, $grey-900);
 
@@ -32,32 +38,21 @@
 	}
 }
 
-%content_style {
-	// background-color: if($variant == 'light', rgba($white, 0.6), $fill);
-	// border-radius: $corner-radius;
-	margin: $space-size;
-}
-
 %sidebar_scrollbar {
 	> range > trough {
-		margin: 0 -8px 0 0;
 		> slider {
-			background-color: if($variant == 'light', $grey-250, $grey-800);
+			background-color: color-mix(in srgb, currentColor 40%, transparent);
 
 			&:hover {
-				background-color: if($variant == 'light', $grey-300, $grey-900);
+				background-color: $text-secondary-disabled;
 			}
 
 			&:active {
-				background-color: if($variant == 'light', $grey-300, $grey-900);
+				background-color: $text-secondary;
 			}
 
 			&:disabled {
-				background-color: if(
-					$variant == 'light',
-					$grey-050,
-					$background
-				);
+				background-color: $text-secondary-disabled;
 			}
 		}
 	}
@@ -163,21 +158,22 @@
 		border-left: none;
 	}
 
-	> range > trough {
-		> slider {
-			border: $corner-radius - 8px solid transparent;
-		}
-	}
+	/* > range > trough { */
+	/* 	> slider { */
+	/* 		border: $corner-radius - 8px solid transparent; */
+	/* 		margin: 0 -8px 0 0; */
+	/* 	} */
+	/* } */
 
 	&.overlay-indicator {
 		&:not(.dragging):not(.hovering) {
 			border-color: transparent;
 			background-color: transparent;
 
-			> range > trough > slider {
-				border: none;
-				margin: $corner-radius - 8px - $space-size / 2;
-			}
+			/* > range > trough > slider { */
+			/* 	border: none; */
+			/* 	margin: $corner-radius - 8px - $space-size / 2; */
+			/* } */
 
 			button {
 				border: none;
