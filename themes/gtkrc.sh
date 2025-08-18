@@ -1,199 +1,199 @@
 make_gtkrc() {
-	local dest="${1}"
-	local name="${2}"
-	local theme="${3}"
-	local color="${4}"
-	local size="${5}"
-	local ctype="${6}"
-	local window="${7}"
+    local dest="${1}"
+    local name="${2}"
+    local theme="${3}"
+    local color="${4}"
+    local size="${5}"
+    local ctype="${6}"
+    local window="${7}"
 
-	[[ "${color}" == '-Light' ]] && local ELSE_LIGHT="${color}"
-	[[ "${color}" == '-Dark' ]] && local ELSE_DARK="${color}"
+    [[ "${color}" == '-Light' ]] && local ELSE_LIGHT="${color}"
+    [[ "${color}" == '-Dark' ]] && local ELSE_DARK="${color}"
 
-	local GTKRC_DIR="${SRC_DIR}/main/gtk-2.0"
-	local THEME_DIR="${1}/${2}${3}${4}${5}${6}"
+    local GTKRC_DIR="${SRC_DIR}/main/gtk-2.0"
+    local THEME_DIR="${1}/${2}${3}${4}${5}${6}"
 
-	if [[ "${color}" != '-Dark' ]]; then
-		case "$theme" in
-		'')
-			theme_color='#3c84f7'
-			;;
-		-Purple)
-			theme_color='#AB47BC'
-			;;
-		-Pink)
-			theme_color='#EC407A'
-			;;
-		-Red)
-			theme_color='#E53935'
-			;;
-		-Orange)
-			theme_color='#F57C00'
-			;;
-		-Yellow)
-			theme_color='#FBC02D'
-			;;
-		-Green)
-			theme_color='#4CAF50'
-			;;
-		-Teal)
-			theme_color='#009688'
-			;;
-		-Grey)
-			theme_color='#464646'
-			;;
-		esac
+    if [[ "${color}" != '-Dark' ]]; then
+        case "$theme" in
+            '')
+                theme_color='#1a6397'
+                ;;
+            -Green)
+                theme_color='#586600'
+                ;;
+            -Grey)
+                theme_color='#5e6d6e'
+                ;;
+            -Orange)
+                theme_color='#a13c10'
+                ;;
+            -Pink)
+                theme_color='#af2668'
+                ;;
+            -Purple)
+                theme_color='#484eb6'
+                ;;
+            -Red)
+                theme_color='#b7211f'
+                ;;
+            -Teal)
+                theme_color='#1a6265'
+                ;;
+            -Yellow)
+                theme_color='#664c00'
+                ;;
+        esac
 
-		if [[ "$ctype" == '-Solarized' ]]; then
-			case "$theme" in
-			'')
-				theme_color='#5e81ac'
-				;;
-			-Purple)
-				theme_color='#b57daa'
-				;;
-			-Pink)
-				theme_color='#cd7092'
-				;;
-			-Red)
-				theme_color='#c35b65'
-				;;
-			-Orange)
-				theme_color='#d0846c'
-				;;
-			-Yellow)
-				theme_color='#e4b558'
-				;;
-			-Green)
-				theme_color='#82ac5d'
-				;;
-			-Teal)
-				theme_color='#83b9b8'
-				;;
-			-Grey)
-				theme_color='#3a4150'
-				;;
-			esac
-		fi
+        if [[ "$ctype" == '-Solarized' ]]; then
+            case "$theme" in
+                '')
+                    theme_color='#1a6397'
+                    ;;
+                -Green)
+                    theme_color='#586600'
+                    ;;
+                -Grey)
+                    theme_color='#5e6d6e'
+                    ;;
+                -Orange)
+                    theme_color='#a13c10'
+                    ;;
+                -Pink)
+                    theme_color='#af2668'
+                    ;;
+                -Purple)
+                    theme_color='#484eb6'
+                    ;;
+                -Red)
+                    theme_color='#b7211f'
+                    ;;
+                -Teal)
+                    theme_color='#1a6265'
+                    ;;
+                -Yellow)
+                    theme_color='#664c00'
+                    ;;
+            esac
+        fi
 
-	else
-		case "$theme" in
-		'')
-			theme_color='#5b9bf8'
-			;;
-		-Purple)
-			theme_color='#BA68C8'
-			;;
-		-Pink)
-			theme_color='#F06292'
-			;;
-		-Red)
-			theme_color='#F44336'
-			;;
-		-Orange)
-			theme_color='#FB8C00'
-			;;
-		-Yellow)
-			theme_color='#FFD600'
-			;;
-		-Green)
-			theme_color='#66BB6A'
-			;;
-		-Teal)
-			theme_color='#4DB6AC'
-			;;
-		-Grey)
-			theme_color='#DDDDDD'
-			;;
-		esac
+    else
+        case "$theme" in
+            '')
+                theme_color='#268bd3'
+                ;;
+            -Green)
+                theme_color='#849900'
+                ;;
+            -Grey)
+                theme_color='#e1d7b7'
+                ;;
+            -Orange)
+                theme_color='#c94c16'
+                ;;
+            -Pink)
+                theme_color='#d23681'
+                ;;
+            -Purple)
+                theme_color='#6d71c4'
+                ;;
+            -Red)
+                theme_color='#db302d'
+                ;;
+            -Teal)
+                theme_color='#29a298'
+                ;;
+            -Yellow)
+                theme_color='#b28500'
+                ;;
+        esac
 
-		if [[ "$ctype" == '-Solarized' ]]; then
-			case "$theme" in
-			'')
-				theme_color='#89a3c2'
-				;;
-			-Purple)
-				theme_color='#c89dbf'
-				;;
-			-Pink)
-				theme_color='#dc98b1'
-				;;
-			-Red)
-				theme_color='#d4878f'
-				;;
-			-Orange)
-				theme_color='#dca493'
-				;;
-			-Yellow)
-				theme_color='#eac985'
-				;;
-			-Green)
-				theme_color='#a0c082'
-				;;
-			-Teal)
-				theme_color='#83b9b8'
-				;;
-			-Grey)
-				theme_color='#d9dce3'
-				;;
-			esac
-		fi
+        if [[ "$ctype" == '-Solarized' ]]; then
+            case "$theme" in
+                '')
+                    theme_color='#268bd3'
+                    ;;
+                -Green)
+                    theme_color='#849900'
+                    ;;
+                -Grey)
+                    theme_color='#e1d7b7'
+                    ;;
+                -Orange)
+                    theme_color='#c94c16'
+                    ;;
+                -Pink)
+                    theme_color='#d23681'
+                    ;;
+                -Purple)
+                    theme_color='#6d71c4'
+                    ;;
+                -Red)
+                    theme_color='#db302d'
+                    ;;
+                -Teal)
+                    theme_color='#29a298'
+                    ;;
+                -Yellow)
+                    theme_color='#b28500'
+                    ;;
+            esac
+        fi
 
-	fi
+    fi
 
-	if [[ "$blackness" == 'true' ]]; then
-		case "$ctype" in
-		'')
-			background_light='#FFFFFF'
-			background_dark='#0F0F0F'
-			background_darker='#121212'
-			background_alt='#212121'
-			titlebar_light='#F2F2F2'
-			titlebar_dark='#030303'
-			;;
-		-Solarized)
-			background_light='#f8fafc'
-			background_dark='#0d0e11'
-			background_darker='#0f1115'
-			background_alt='#1c1f26'
-			titlebar_light='#f0f1f4'
-			titlebar_dark='#020203'
-			;;
-		esac
-	else
-		case "$ctype" in
-		'')
-			background_light='#FFFFFF'
-			background_dark='#2C2C2C'
-			background_darker='#3C3C3C'
-			background_alt='#464646'
-			titlebar_light='#F2F2F2'
-			titlebar_dark='#242424'
-			;;
-		-Solarized)
-			background_light='#f8fafc'
-			background_dark='#242932'
-			background_darker='#333a47'
-			background_alt='#3a4150'
-			titlebar_light='#f0f1f4'
-			titlebar_dark='#1e222a'
-			;;
-		esac
-	fi
+    if [[ "$blackness" == 'true' ]]; then
+        case "$ctype" in
+            '')
+                background_light='#fdf5e2'
+                background_dark='#001014'
+                background_darker='#001010'
+                background_alt='#002029'
+                titlebar_light='#fdf5e2'
+                titlebar_dark='#001014'
+                ;;
+            -Solarized)
+                background_light='#fdf5e2'
+                background_dark='#001014'
+                background_darker='#001010'
+                background_alt='#002029'
+                titlebar_light='#fdf5e2'
+                titlebar_dark='#001014'
+                ;;
+        esac
+    else
+        case "$ctype" in
+            '')
+                background_light='#fdf5e2'
+                background_dark='#001419'
+                background_darker='#001014'
+                background_alt='#002029'
+                titlebar_light='#fdf5e2'
+                titlebar_dark='#001419'
+                ;;
+            -Solarized)
+                background_light='#fdf5e2'
+                background_dark='#002b36'
+                background_darker='#002029'
+                background_alt='#002c38'
+                titlebar_light='#fdf5e2'
+                titlebar_dark='#002b36'
+                ;;
+        esac
+    fi
 
-	mkdir -p "${THEME_DIR}/gtk-2.0"
+    mkdir -p "${THEME_DIR}/gtk-2.0"
 
-	cp -r "${GTKRC_DIR}/gtkrc${ELSE_DARK:-}-default" "${THEME_DIR}/gtk-2.0/gtkrc"
-	sed -i "s/#FFFFFF/${background_light}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
-	sed -i "s/#2C2C2C/${background_dark}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
-	sed -i "s/#464646/${background_alt}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
+    cp -r "${GTKRC_DIR}/gtkrc${ELSE_DARK:-}-default" "${THEME_DIR}/gtk-2.0/gtkrc"
+    sed -i "s/#fdf5e2/${background_light}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
+    sed -i "s/#001419/${background_dark}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
+    sed -i "s/#002029/${background_alt}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
 
-	if [[ "${color}" == '-Dark' ]]; then
-		sed -i "s/#5b9bf8/${theme_color}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
-		sed -i "s/#3C3C3C/${background_darker}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
-		sed -i "s/#242424/${titlebar_dark}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
-	else
-		sed -i "s/#3c84f7/${theme_color}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
-		sed -i "s/#F2F2F2/${titlebar_light}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
-	fi
+    if [[ "${color}" == '-Dark' ]]; then
+        sed -i "s/#268bd3/${theme_color}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
+        sed -i "s/#001014/${background_darker}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
+        sed -i "s/#001419/${titlebar_dark}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
+    else
+        sed -i "s/#1a6397/${theme_color}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
+        sed -i "s/#fdf5e2/${titlebar_light}/g" "${THEME_DIR}/gtk-2.0/gtkrc"
+    fi
 }
