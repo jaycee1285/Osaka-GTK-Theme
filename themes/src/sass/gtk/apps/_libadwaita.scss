@@ -26,7 +26,7 @@
 	background-color: if($variant == 'light', $grey-200, $grey-900);
 
 	@if $colorscheme == 'solarized' {
-		background-color: if($variant == 'light', $grey-250, $grey-800);
+		background-color: if($variant == 'light', $grey-200, $grey-800);
 	}
 
 	color: on($background);
@@ -286,7 +286,7 @@ avatar {
 		color: $text-secondary;
 		box-shadow: none;
 		outline: none;
-		background-color: if($variant == 'light', $grey-250, $fill);
+		background-color: if($variant == 'light', $grey-200, $fill);
 		color: $text;
 	}
 
