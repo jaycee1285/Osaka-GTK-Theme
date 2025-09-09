@@ -10,14 +10,9 @@
 </p>
 
 A GTK theme based on the colours of [Craftzdog](https://github.com/craftzdog) great theme: [Solarized Osaka for Neovim](https://github.com/craftzdog/solarized-osaka.nvim)<br>
-the [VinceLiuice's](https://github.com/vinceliuice) awesome: [Magnetic GTK theme](https://github.com/vinceliuice/Magnetic-gtk-theme),
-and the creativity of [Gusbemacbe's](https://github.com/gusbemacbe): [Suru Plus Icon Theme](https://github.com/gusbemacbe/suru-plus).
+the [VinceLiuice's](https://github.com/vinceliuice) Awesome GTK Themes and the creativity of [Gusbemacbe's](https://github.com/gusbemacbe): [Suru Plus Icon Theme](https://github.com/gusbemacbe/suru-plus).
 
-![Solarized Osaka](https://raw.githubusercontent.com/Fausto-Korpsvart/Osaka-GTK-Theme/main/extra/screenshots/Osaka_00.png)
-
-![Solarized Default](https://raw.githubusercontent.com/Fausto-Korpsvart/Osaka-GTK-Theme/main/extra/screenshots/Solarized_00.png)
-
-![Solarized Light](https://raw.githubusercontent.com/Fausto-Korpsvart/Osaka-GTK-Theme/main/extra/screenshots/Light_00.png)
+![Solarized Osaka](https://raw.githubusercontent.com/Fausto-Korpsvart/Osaka-GTK-Theme/main/extra/screenshots/Osaka.png)
 
 > [!NOTE]
 > The theme is more focused on the Gnome Desktop, but supports Cinnamon, XFCE, Mate, etc. with generic styles.
