@@ -12,7 +12,7 @@
 	height: $item_size + 3px;
 	background-color: if(
 		$variant == 'light',
-		rgba($white, 0.55),
+		rgba($white, 0.45),
 		rgba($black, 0.85)
 	);
 
@@ -37,7 +37,7 @@
 		-natural-hpadding: 12px;
 		-minimum-hpadding: 12px;
 		font-weight: bold;
-		color: $text;
+		color: $text-secondary;
 		transition-duration: 150ms;
 		border-radius: $base_radius;
 		text-shadow: none;
@@ -225,8 +225,8 @@
 
 	// Input indicators
 	Gjs_status_keyboard_InputSourceIndicator.panel-button, // Ibus
-    Gjs_appindicatorsupport_rgcjonas_gmail_com_indicatorStatusIcon_IndicatorStatusIcon.panel-button,
-    Gjs_appindicatorsupport_rgcjonas_gmail_com_indicatorStatusIcon_AppIndicatorsIndicatorStatusIcon.panel-button {
+  Gjs_appindicatorsupport_rgcjonas_gmail_com_indicatorStatusIcon_IndicatorStatusIcon.panel-button,
+  Gjs_appindicatorsupport_rgcjonas_gmail_com_indicatorStatusIcon_AppIndicatorsIndicatorStatusIcon.panel-button {
 		// Fcitx
 		-natural-hpadding: 12px + $base_padding !important;
 		-minimum-hpadding: 12px + $base_padding !important;
